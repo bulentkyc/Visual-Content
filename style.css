@@ -1,0 +1,97 @@
+body {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+header > img, footer > img {
+    width: 800px;
+    height: 400px;
+}
+
+header > img {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+footer > img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+header > h1 {
+    height: 60px;
+    line-height: 60px;
+    border-left: 10px solid #00ffff;
+    background-color: rgb(96, 104, 111);
+    border-top-right-radius: 15px;
+    color: white;
+}
+
+footer > h1 {
+    height: 60px;
+    line-height: 60px;
+    border-left: 10px solid #00ffff;
+    background-color: rgb(96, 104, 111);
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    color: white;
+}
+
+.card {
+    width: 200px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px #777;
+    border-radius: 25px;
+    text-align: center;
+    float: left;
+}
+
+.card:nth-of-type(3n+2) {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.card > img {
+    width: 200px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card > img {
+    width: 200px;
+    height: 150px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card > a {
+    text-decoration: none;
+    color: black;
+}
+
+.card > a > h4  {
+    width: 100px;
+    background-color: rgb(255, 150, 22);
+    border-radius: 5px;
+    margin: auto;
+}
+/* 
+    x*n+1
+
+     :nth-of-type(3n+2)
+
+
+2   2             
+5   3+2         
+8   2*3+2
+11  3*3+2
+
+
+4
+7
+10
+ */
